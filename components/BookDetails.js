@@ -1,7 +1,7 @@
 const BookDetails = (book) => {
   let html = `
   <div id="bookDetails" 
-  class="book__details absolute inset-x-1 divide-y border-x-4 border-black  bg-red-300 p-2 w-48 top-10 mx-8">
+  class="book__details absolute inset-x-1 divide-y border-x-4 border-black  bg-blue-300 p-2 w-48 top-10 mx-8">
       <img src="${book.coverImage}">
           <ul class="list">
               <li>Author: ${book.author}</li>

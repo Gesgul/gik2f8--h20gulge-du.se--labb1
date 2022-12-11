@@ -29,7 +29,7 @@ function renderBookList(bookList) {
 
   for(let i = 0; i < elements.length; i++){
 
-    elements[i].addEventListener('mouseon', (e) => {
+    elements[i].addEventListener('mouseenter', (e) => {
   
       let book = getBookDetails(e.target.id)
       book.then(function (result){
@@ -37,7 +37,7 @@ function renderBookList(bookList) {
       })
     });
 
-    elements[i].addEventListener('mouseoff', () => {
+    elements[i].addEventListener('mouseleave', () => {
       const element = document.getElementById('bookDetails');
       element.remove();
     });
